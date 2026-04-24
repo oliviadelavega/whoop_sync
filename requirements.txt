@@ -1,0 +1,21 @@
+requests>=2.31.0
+  requests-oauthlib>=1.3.1
+  openpyxl>=3.1.2                                                                                                                                                                                                                                                                                                                                                         
+  pandas>=2.1.0
+  python-dotenv>=1.0.0                                                                                                                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                                                                                                                                          
+  ---
+  File 5 — filename: .env.example                                                                                                                                                                                                                                                                                                                                         
+                  
+  # Copy this file to .env and fill in the values from developer.whoop.com
+  # Never commit the real .env file.                                                                                                                                                                                                                                                                                                                                      
+  
+  WHOOP_CLIENT_ID=your_client_id_here                                                                                                                                                                                                                                                                                                                                     
+  WHOOP_CLIENT_SECRET=your_client_secret_here
+                                                                                                                                                                                                                                                                                                                                                                          
+  # Must match a redirect URI you registered on the Whoop developer dashboard.                                                                                                                                                                                                                                                                                            
+  # For local dev, register: http://localhost:8645/callback
+  WHOOP_REDIRECT_URI=http://localhost:8645/callback                                                                                                                                                                                                                                                                                                                       
+                                                                                                                                                                                                                                                                                                                                                                          
+  # Populated automatically after the first OAuth flow. Leave blank on first run.                                                                                                                                                                                                                                                                                         
+  WHOOP_REFRESH_TOKEN=                                    
